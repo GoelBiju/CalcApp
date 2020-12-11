@@ -20,7 +20,4 @@
     "url": "https://github.com/GoelBiju/CalcApp/issues"
   },
   "homepage": "https://github.com/GoelBiju/CalcApp#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
 }
