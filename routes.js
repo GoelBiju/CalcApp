@@ -11,12 +11,12 @@ function coinFlipRoute(request, response) {
 }
 
 function addNumberRoute(request, response) {
-  let numberOne = request.params.number1;
-  let numberTwo = request.params.number2;
+  let numberOne = Number(request.params.number1);
+  let numberTwo = Number(request.params.number2);
 
   let result = logic.addNumber(numberOne, numberTwo);
 
-  response.send(result);
+  response.send(result.toString());
 }
 
 module.exports.coinFlipRoute = coinFlipRoute;
