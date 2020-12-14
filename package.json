@@ -2,7 +2,7 @@
   "name": "calcapp",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "run.js",
   "directories": {
     "test": "test"
   },
