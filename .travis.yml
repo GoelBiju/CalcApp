@@ -1,13 +1,15 @@
 language: node_js
 node_js:
-- node
+  - node
 install:
-- npm install -g mocha
-- npm install chai
-- npm install chai-http
-- npm install express
+  - npm install -g mocha
+  - npm install chai
+  - npm install chai-http
+  - npm install express
 deploy:
   provider: heroku
   app: heroku-calc-app
+  on:
+    all_branches: true
   api_key:
     secure: V1di8SnWyQCTnoMQ9RnYMuNEveJVQfJLTWLKtkK/DwaDluOBa23GZeP3cu87OcwMMrRiVx2CW825zE+P5PCzoSwDoc3IMtDSVGjxbmxmVkoXL/ha8umJ5svoABDEHfmvgePZgJVRLtwGlhrlLFNl46eIyctsutnU8/Z2YZOzKzX8Yitt+j7fVbBHMDKVwdNLxijS6XEATjsFee0ZOa/ELBGM8wn8oBb/sGhZzT52fmi2N9Hxgkd/u0hyj1BJgarhFUYnDGdRSxvrLYardMGMmbreUanoiLu0gPoDcZyZWNS8Pm8oZZFMQPYMmPsxL++LvjTW4NVrGfEwxHJ/HdTQf91FNzbUiqXt+TB8KyvD80OzR9ET18AqPw3hIn2n7Ztb62pNvLR/EWJY0kL1uJYtcwI3tV8xwda0kGEWnrhYRuu7iuPxo0Y/CGka8JDv6Nt7KLWD26BfVauBPRV457XUp4WrtI5KPwG1moqqpQch40PYCx6pQuvDAV1+dpeEwFux/6hQ+SWFM2n8fJFDCt97N/qKMMvdXsDgLxcxBxRqkJhMUC51etguBIFxadVrQkplLch06mXRw1RDPqoyBih4t/hLGYFQUBU4kvdYAE94B9djkTcLbYbQ/+/4zMI5IoCB5Z1CHAxkc7rRpvgrqFBewAv51ZokSFMiYb0KSjBF/TA=
